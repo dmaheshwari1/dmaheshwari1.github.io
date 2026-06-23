@@ -222,6 +222,7 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 16px;
+      margin-bottom: 22px;
     }
 
     .subject {
@@ -324,6 +325,225 @@
     }
 
 
+
+
+
+    .curriculum-note {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px;
+      text-align: center;
+      color: var(--muted);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .curriculum-note strong {
+      color: var(--primary);
+    }
+
+    .facility-section {
+      background: var(--white);
+    }
+
+    .feature-split {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .soft-panel {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 16px 50px rgba(17,24,39,0.06);
+    }
+
+    .soft-panel h2 {
+      color: var(--primary);
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      margin-bottom: 14px;
+      line-height: 1.2;
+    }
+
+    .soft-panel p {
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .facility-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .facility-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+    }
+
+    .facility-item span {
+      display: inline-block;
+      font-size: 1.7rem;
+      margin-bottom: 8px;
+    }
+
+    .facility-item h3 {
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+
+    .belief-box {
+      background: linear-gradient(135deg, #eff6ff, #fff7ed);
+      border: 1px solid #bfdbfe;
+      border-radius: 24px;
+      padding: 36px;
+      margin-top: 26px;
+    }
+
+    .belief-box h3 {
+      color: var(--primary);
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+    }
+
+    .belief-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    .belief-point {
+      background: rgba(255,255,255,0.78);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+    }
+
+    .belief-point h4 {
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .small-note {
+      font-size: 0.92rem;
+      color: var(--muted);
+      margin-top: 18px;
+    }
+
+    @media (max-width: 850px) {
+      .feature-split,
+      .belief-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .facility-list {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+    .faculty-section {
+      background: #f8fafc;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faculty-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 36px;
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 32px;
+      align-items: center;
+      box-shadow: 0 16px 50px rgba(17,24,39,0.07);
+    }
+
+    .faculty-badge {
+      display: inline-block;
+      background: #eff6ff;
+      color: var(--primary);
+      border: 1px solid #bfdbfe;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .faculty-card h2 {
+      color: var(--primary);
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .faculty-card p {
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .experience-box {
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      color: var(--white);
+      border-radius: 22px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .experience-box .year {
+      font-size: clamp(3rem, 8vw, 5rem);
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .experience-box h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .experience-box p {
+      color: #e5e7eb;
+      margin-bottom: 0;
+    }
+
+    .faculty-points {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .faculty-point {
+      background: #f9fafb;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+    }
+
+    .faculty-point strong {
+      display: block;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+
+    @media (max-width: 850px) {
+      .faculty-card,
+      .faculty-points {
+        grid-template-columns: 1fr;
+      }
+    }
 
     .review-card {
       background: linear-gradient(135deg, #fff7ed, #fffbeb);
@@ -461,6 +681,8 @@
       <nav class="nav-links">
         <a href="#classes">Classes</a>
         <a href="#subjects">Subjects</a>
+        <a href="#facility">Facility</a>
+        <a href="#faculty">Faculty</a>
         <a href="#admission">Admission</a>
         <a href="#contact">Contact</a>
         <a class="call-btn" href="tel:+919420938385">Call Now</a>
@@ -475,8 +697,8 @@
           <span class="badge">English Medium State Board Classes</span>
           <h1>Tuition Classes in Amalner for Std. 6 to Std. 8</h1>
           <p>
-            Maheshwari Classes helps English Medium State Board students build strong basics,
-            improve confidence, revise regularly, and prepare better for school exams.
+            A focused class for Std. 6, 7, and 8 students — guided by Mrs. Deepali Maheshwari,
+            an experienced educator teaching since 1999, combining clear old-school teaching with a modern classroom.
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#admission">Apply for Admission</a>
@@ -496,8 +718,16 @@
             Maharashtra State Board
           </div>
           <div class="info-row">
+            <strong>Subjects</strong>
+            English, Marathi, Hindi, Maths, Science, History, Civics, Geography
+          </div>
+          <div class="info-row">
             <strong>Medium</strong>
             English Medium
+          </div>
+          <div class="info-row">
+            <strong>Faculty</strong>
+            Mrs. Deepali Maheshwari, teaching since 1999
           </div>
           <div class="info-row">
             <strong>Location</strong>
@@ -541,17 +771,146 @@
     <section id="subjects" class="highlight">
       <div class="container">
         <div class="section-title">
-          <h2>Subjects Covered</h2>
+          <h2>All Core Subjects in the Curriculum</h2>
           <p>
-            Subject availability may vary by batch. Contact us for current batch details.
+            Curriculum-based support for English Medium Maharashtra State Board students from Std. 6 to Std. 8.
           </p>
         </div>
 
         <div class="subjects">
           <div class="subject">English</div>
+          <div class="subject">Marathi</div>
+          <div class="subject">Hindi</div>
           <div class="subject">Mathematics</div>
-          <div class="subject">Science</div>
-          <div class="subject">Social Science</div>
+          <div class="subject">General Science</div>
+          <div class="subject">History</div>
+          <div class="subject">Civics</div>
+          <div class="subject">Geography</div>
+        </div>
+
+        <div class="curriculum-note">
+          <strong>Balanced academic support:</strong>
+          We help students with regular school subjects as per their standard and batch requirements —
+          including languages, maths, science, and social studies. Subject availability may vary depending
+          on the student’s school curriculum and current batch.
+        </div>
+      </div>
+    </section>
+
+    <section id="faculty" class="faculty-section">
+      <div class="container">
+        <div class="faculty-card">
+          <div class="experience-box">
+            <div class="year">1999</div>
+            <h3>Teaching Since 1999</h3>
+            <p>Years of classroom experience, student understanding, and steady academic guidance.</p>
+          </div>
+
+          <div>
+            <span class="faculty-badge">Senior Faculty & Experienced Educator</span>
+            <h2>Guided by Mrs. Deepali Maheshwari</h2>
+            <p>
+              Maheshwari Classes is led by the renowned <strong>Mrs. Deepali Maheshwari</strong>,
+              a respected educator with teaching experience since 1999.
+            </p>
+            <p>
+              She currently also teaches at <strong>St. Mary English Medium High School</strong>,
+              bringing school-level understanding, discipline, and practical classroom experience
+              into every batch at Maheshwari Classes.
+            </p>
+            <p>
+              Her approach is simple: explain patiently, strengthen basics, reduce confusion,
+              and help students build confidence before they enter the pressure years of Std. 9 and Std. 10.
+            </p>
+
+            <div class="faculty-points">
+              <div class="faculty-point">
+                <strong>Experienced</strong>
+                Since 1999 in the teaching field.
+              </div>
+              <div class="faculty-point">
+                <strong>School Connected</strong>
+                Currently teaching at St. Mary English Medium High School.
+              </div>
+              <div class="faculty-point">
+                <strong>Student Focused</strong>
+                Patient guidance for Std. 6 to Std. 8 students.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="facility" class="facility-section">
+      <div class="container">
+        <div class="feature-split">
+          <div class="soft-panel">
+            <h2>Modern Classroom. Traditional Care.</h2>
+            <p>
+              Maheshwari Classes keeps the learning environment simple, disciplined, and comfortable —
+              with modern tools used only where they genuinely help students understand better.
+            </p>
+            <p>
+              We believe technology should support teaching, not replace the teacher. Students get the warmth
+              of old-school explanation with the clarity of a well-equipped classroom.
+            </p>
+          </div>
+
+          <div class="facility-list">
+            <div class="facility-item">
+              <span>📽️</span>
+              <h3>Projector-Based Learning</h3>
+              <p>Useful visuals, diagrams, and examples help students understand difficult topics clearly.</p>
+            </div>
+            <div class="facility-item">
+              <span>❄️</span>
+              <h3>Air-Conditioned Classroom</h3>
+              <p>A comfortable classroom helps students stay focused during evening batches.</p>
+            </div>
+            <div class="facility-item">
+              <span>🎤</span>
+              <h3>Mic Support</h3>
+              <p>Clear voice delivery makes it easier for every student to follow the explanation.</p>
+            </div>
+            <div class="facility-item">
+              <span>🔊</span>
+              <h3>Speakers for Clarity</h3>
+              <p>Audio support ensures instructions, examples, and explanations are heard properly.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="belief-box">
+          <h3>Why Only Std. 6, 7, and 8?</h3>
+          <p>
+            We deliberately focus on middle-school students because this is the stage where learning habits,
+            subject basics, reading ability, mathematics confidence, and exam discipline can be built calmly —
+            before the pressure of Std. 9 and Std. 10 begins.
+          </p>
+          <p>
+            Many classes start talking about “foundation” only when board exams are close. Our approach is quieter:
+            reduce the noise, strengthen the basics, and help children become comfortable with school learning first.
+          </p>
+
+          <div class="belief-grid">
+            <div class="belief-point">
+              <h4>Less Pressure</h4>
+              <p>Std. 6–8 students can still learn without the fear and rush of board-exam coaching.</p>
+            </div>
+            <div class="belief-point">
+              <h4>Better Basics</h4>
+              <p>Reading, writing, numeracy, grammar, science concepts, and study habits become stronger with regular support.</p>
+            </div>
+            <div class="belief-point">
+              <h4>Cleaner Focus</h4>
+              <p>Instead of adding more noise, we focus only on the age group where patient explanation matters most.</p>
+            </div>
+          </div>
+
+          <p class="small-note">
+            Our belief is simple: strong basics are not a marketing tactic. They are the quiet work that makes later learning easier.
+          </p>
         </div>
       </div>
     </section>
@@ -594,7 +953,7 @@
             <ul class="steps">
               <li>Choose the student’s standard</li>
               <li>Share parent contact details</li>
-              <li>Ask about batch timing and fees</li>
+              <li>Ask about subjects, batch timing, and fees</li>
               <li>Confirm admission with Maheshwari Classes</li>
             </ul>
           </div>
