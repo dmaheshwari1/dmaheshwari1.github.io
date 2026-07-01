@@ -8,6 +8,10 @@
   <meta name="description" content="A small, caring English-medium tuition class in Amalner for Std. 6, 7 and 8. Taught since 1999 by Mrs. Deepali Maheshwari of St. Mary's High School. We build strong basics calmly — before the pressure of Std. 9 and 10." />
   <meta name="theme-color" content="#1C2A3A" />
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="shortcut icon" href="assets/images/favicon.svg" />
+
   <!--
     BEFORE LAUNCH: once you know your live address (e.g. https://USERNAME.github.io/REPO/),
     uncomment and fill these two lines. Leaving a placeholder URL here can hurt Google ranking,
@@ -144,6 +148,10 @@
       display: grid; place-items: center; color: var(--paper);
       font-family: "Noto Sans Devanagari", "Fraunces", serif; font-weight: 600; font-size: 1.1rem;
       box-shadow: var(--shadow-sm);
+    }
+    .brand-logo {
+      width: 38px; height: 38px; border-radius: 11px; flex: none;
+      box-shadow: var(--shadow-sm); display: block;
     }
     .brand-name { font-family: "Fraunces", serif; font-size: 1.18rem; color: var(--ink); line-height: 1; }
     .brand-sub  { font-size: 0.68rem; color: var(--ink-soft); font-weight: 600; letter-spacing: .04em; }
@@ -491,7 +499,7 @@
   <header>
     <div class="container nav">
       <a class="brand" href="#top" aria-label="Maheshwari Classes home">
-        <span class="brand-mark">म</span>
+        <img class="brand-logo" src="assets/images/favicon.svg" alt="Maheshwari Classes logo" width="38" height="38" />
         <span>
           <span class="brand-name" style="display:block;">Maheshwari Classes</span>
           <span class="brand-sub">Amalner · Std. 6–8</span>
@@ -918,7 +926,10 @@
     <div class="container">
       <div class="foot-grid">
         <div class="foot-brand">
-          <span class="brand-name serif" style="font-size:1.3rem;">Maheshwari Classes</span>
+          <a href="#top" style="display:inline-flex;align-items:center;gap:10px;text-decoration:none;margin-bottom:10px;">
+            <img src="assets/images/favicon.svg" alt="Maheshwari Classes logo" width="36" height="36" style="border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.25);flex:none;" />
+            <span class="brand-name serif" style="font-size:1.3rem;">Maheshwari Classes</span>
+          </a>
           <p style="margin-top:10px;">English-medium State Board tuition for Std. 6, 7 &amp; 8 in Amalner. Taught since 1999 by Mrs. Deepali Maheshwari.</p>
           <p class="marathi" style="color:#8fd3ad;">घाई नको — पाया पक्का.</p>
         </div>

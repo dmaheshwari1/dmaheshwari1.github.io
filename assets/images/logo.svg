@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" width="220" height="48" role="img" aria-label="Maheshwari Classes">
+  <defs>
+    <linearGradient id="markGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1C2A3A"/>
+      <stop offset="100%" stop-color="#314a66"/>
+    </linearGradient>
+  </defs>
+  <!-- Brand mark: rounded square -->
+  <rect x="0" y="4" width="40" height="40" rx="11" ry="11" fill="url(#markGrad)"/>
+  <!-- Devanagari "म" glyph -->
+  <text x="20" y="31" text-anchor="middle" font-family="'Noto Sans Devanagari', 'Arial Unicode MS', sans-serif" font-size="21" font-weight="600" fill="#FAF5EC">म</text>
+  <!-- Wordmark -->
+  <text x="52" y="24" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="700" fill="#1C2A3A" letter-spacing="-0.2">Maheshwari Classes</text>
+  <text x="52" y="38" font-family="'Arial', sans-serif" font-size="9" font-weight="600" fill="#4A5A6E" letter-spacing="0.6">AMALNER · STD. 6–8</text>
+</svg>
